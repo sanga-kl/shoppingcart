@@ -187,3 +187,8 @@ h1 {
   border-radius: 5px;
 }
 .track:hover{color: white; background-color: black;}
+
+p {
+  text-align: justify;
+  width: 270px;
+}
