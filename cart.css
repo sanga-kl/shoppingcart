@@ -1,12 +1,45 @@
 body {
   font-family: Kumbh Sans;
   text-align: center;
-  
+  padding: 0;
+  margin: 0;
 }
 
+header {
+  background-color: #4d4d4d;
+  display: flex;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  flex-direction: row;
+  gap: 450px;
+  top: 0;
+}
+
+.logo {
+  width: 60px;
+  margin-left: 30px;
+}
+
+.track {
+  color: black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: white;
+  padding: 5px ;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.track:hover{color: white; background-color: black;}
+
 h1 {
-  font-size: 70px;
-  color: rgb(4, 4, 82);
+  font-size: 40px;
+  color: white;
 }
 
 #Cart-image {

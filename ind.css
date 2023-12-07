@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Kumbh Sans;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
@@ -14,7 +14,7 @@ header {
   padding: 15px;
   text-align: center;
   flex-direction: row;
-  gap: 400px;
+  gap: 450px;
 }
 
 section {
@@ -169,6 +169,7 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-left: 150px;
+  font-size: 40px;
 }
 
 .track {

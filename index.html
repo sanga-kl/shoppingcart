@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylish Shopping Cart</title>
     <link rel="stylesheet" href="ind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Kumbh+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <img src="cart.png" class="logo">
-        <h1 style="margin: 0;">Discover Our Stylish Collection</h1>
+        <h1 style="margin: 0;">Smart Shopping Cart</h1>
         <a href="cart.html" class="track">Tracker</a>
     </header>
 
@@ -280,7 +286,7 @@
             </thead>
             <tbody id="cartItems"></tbody>
         </table>
-        <button class="cart-button" onclick="checkout()">Explore Checkout Options</button>
+        <button class="cart-button" onclick="checkout()"> Checkout </button>
     </section>
 
     <script>
@@ -315,6 +321,29 @@
         function checkout() {
             alert('Discover amazing checkout options!');
         }
+        
+        function calculateTotalPrice() {
+    const cartRows = document.getElementById('cartItems').getElementsByTagName('tr');
+    let totalPrice = 0;
+
+    for (let i = 0; i < cartRows.length; i++) {
+        const cells = cartRows[i].getElementsByTagName('td');
+        const price = parseFloat(cells[1].innerHTML.replace('$', ''));
+        const quantity = parseInt(cells[2].innerHTML);
+
+        totalPrice += price * quantity;
+    }
+
+    return totalPrice.toFixed(2);
+}
+
+
+function checkout() {
+    const total = calculateTotalPrice();
+    alert(`Total Price: $${total}`);
+    
+}
+
     </script>
 
 </body>
