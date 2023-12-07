@@ -1,0 +1,96 @@
+body {
+  font-family: Kumbh Sans;
+  text-align: center;
+  background-image: url(Gradient-Background.png);
+}
+
+h1 {
+  font-size: 70px;
+  color: rgb(4, 4, 82);
+}
+
+#Cart-image {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#status-message {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Kumbh Sans;
+  font-size: 50px;
+  color: rgb(4, 4, 82);
+}
+
+#destination-button {
+  padding: 15px 35px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color:white;
+  background-color: orangered;
+  border-radius: 15px;
+  font-size: 21px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 31.50px;
+  word-wrap: break-word;
+  border: none;
+}
+#destination-button:hover{background-color: rgb(2, 2, 90);}
+
+.part {
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 30px; 
+  display: inline-flex;
+  margin-top: 5%;
+}
+
+#name {
+  margin-top: 70px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+#pass {
+  margin-top: 50px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+#submit {
+  margin-top: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color:white;
+  background-color: orangered;
+  border-radius: 15px;
+  font-size: 21px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 31.50px;
+  word-wrap: break-word;
+  border: none;
+}
+#submit:hover{background-color: rgb(2, 2, 90);}
+
+p {
+  border: 3px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.h1 {
+  font-size: 70px;
+  color: rgb(4, 4, 82);
+  margin-top: 130px;
+}
